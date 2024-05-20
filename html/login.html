@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/login.css">
+   <link rel="stylesheet" href="../css/main.css">
+   <link rel="icon" type="image/png" sizes="32x32" href="../logo/favicon-32x32.png">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <title>Login</title>
+</head>
+<body>
+    <!-- Aqui fica o menu de navegação e a Logo marca-->
+    <header class="header">
+        <a class="logo" href="home.html"><img src="../logo/_d0c84794-c97c-4405-9b9a-37d996476d23.jpeg" alt="Logo JJ Multimarcas"></a>
+        <div class="nomeLoja"> 
+            <h1>JJ Multimarcas</h1>
+        </div>
+        <i id="hamburguer" class="material-icons" onclick="navBar()">menu</i>
+        <nav id="menuBar">
+            <a href="home.html"><button>Home</button></a>
+            <a href="produtos.html"><button>Produtos</button></a>
+            <a href="nossa-historia.html"><button>Nossa Historia</button></a>
+            <a href="cadastro.html"><button>Cadastro</button></a>
+            <a href="faleconosco.html"><button>Fale conosco</button></a>
+            <a href="login.html"><button>Login</button></a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="card">
+                <h1>Entrar</h1>
+   
+                <div id="msgError"></div>
+   
+                <div class="label-float">
+                    <input type="text" id="usuario" paceholder="" required />
+                    <label id="userLabel" for="usuario">Usuario</label>
+                </div>
+   
+                <div class="label-float">
+                    <input type="password" id="senha" paceholder="" required />
+                    <label id="senhaLabel" for="senha">Senha</label>
+                    <i class="fa-eye" aria-hidden="true"></i>
+                </div>
+   
+                <div class="justify-center">
+                    <button onclick="entrar()">Entrar</button>
+                </div>
+   
+                <p>Não tem uma conta?<a href="./cadastro.html">Cadastre-se</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+    <!-- Aqui fica as Parcerias, Patrocinios e Contatos (fale conosco) -->
+        <div class="patrocinios">
+            <h4>Parcerias e Patrocinios:</h4>
+            <div class="logo-patrocinios">
+                <img src="../logo/nike-logo.jpg" alt="nike">
+                <img src="../logo/jordan.jpg" alt="adidas">
+                <img src="../logo/oakley-logo.png" alt="armani">
+            </div>
+        </div>
+
+        <div class="contatos">
+            <h4>Contatos:</h4>
+            <div>
+                <p>Celular ou Whatsapp: <a href="https://wa.me/55?text=Olá, Seja bem vindo ao nosso Chat On-line. Já iremos atender você. " target="_blank">(99)99999-999 <img src="../logo/icone-whatsapp.png" alt="ícone do Whatsapp" style="width: 17px; height: 17px;"></a></p>
+                <p>E-mail: J-J@hotmail.com <img src="../logo/icon-email.png" alt="Icone do E-mail" style="width: 25px; height: 20px;"></p>
+            </div>
+        </div>
+
+    </footer>
+    <script src="../js/login.js"></script>
+    <script src="../js/menubar.js"></script>
+</body>
+</html>
