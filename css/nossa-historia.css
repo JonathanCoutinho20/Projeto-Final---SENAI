@@ -1,0 +1,36 @@
+.secao-nossa-historia{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+    margin: 40px;
+    padding: 40px 150px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 20px -2px gray;
+
+    font-size: 20px;
+    color: rgb(170, 240, 240);
+ }
+
+ .secao-nossa-historia p{
+    text-indent: 30px;
+    color: aliceblue;
+    line-height: 35px;
+ }
+
+ @media screen and (max-width:480px){
+   .secao-nossa-historia{
+      padding: 0;
+   }
+   .secao-nossa-historia h2{
+      font-size: 18px;
+      text-align: center;
+      margin: 15px;
+   }
+   div{
+      margin: 5px;
+      text-align: center;
+      justify-content: space-evenly;
+   }
+ }
